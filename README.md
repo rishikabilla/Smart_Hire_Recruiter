@@ -36,5 +36,12 @@
 5. **Emails are automatically sent** to shortlisted candidates using recruiter credentials.
 6. Results are saved in **SQLite** and shown on a dashboard.
 
-#UI
+**UI**
 ![image](https://github.com/user-attachments/assets/a3730e9f-6a5f-47fa-8e11-0cc3e873eec0)
+**After Shortlisting**
+![image](https://github.com/user-attachments/assets/e2388741-e963-47a3-a15f-549fd5fc6c23)
+**Mail Received by the shortlisted candidate**
+![image](https://github.com/user-attachments/assets/76e78972-078a-4fc0-90b2-e1f02dca984b)
+
+
+
