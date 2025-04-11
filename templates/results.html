@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shortlisted Candidates | Smart Hire</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Shortlisted Candidates</h1>
+    {% if candidates %}
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Score</th>
+            <th>Resume File</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for cand in candidates %}
+          <tr>
+            <td>{{ cand.name }}</td>
+            <td>{{ cand.email }}</td>
+            <td>{{ '%.2f'|format(cand.score) }}</td>
+            <td>{{ cand.resume }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No candidates matched the criteria.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}" class="back-button">← Go Back</a>
+  </div>
+</body>
+</html>

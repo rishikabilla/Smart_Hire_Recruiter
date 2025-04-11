@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Hire - Candidate Shortlisting</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Hire</h1>
+    <p class="subtitle">Recruitment Automation | Resume Shortlisting</p>
+
+    <form method="POST" enctype="multipart/form-data">
+      <label for="job_title">Job Title</label>
+      <input type="text" id="job_title" name="job_title" required>
+
+      <label for="jd_file">Upload Job Description (.txt)</label>
+      <input type="file" id="jd_file" name="jd_file" accept=".txt" required>
+
+      <label for="cv_files">Upload CVs (PDFs)</label>
+      <input type="file" id="cv_files" name="cv_files" accept=".pdf" multiple required>
+
+      <label for="recruiter_email">Recruiter Email</label>
+      <input type="email" id="recruiter_email" name="recruiter_email" required>
+
+      <label for="recruiter_pass">App Password</label>
+      <input type="password" id="recruiter_pass" name="recruiter_pass" required>
+
+      <label for="skill_score">Candidate Skill Match Preference</label>
+      <select id="skill_score" name="skill_score">
+        <option value="1">Only Highly Skilled</option>
+        <option value="2">Both Highly & Moderately Skilled</option>
+      </select>
+
+      <button type="submit">Start Shortlisting</button>
+    </form>
+  </div>
+</body>
+</html>

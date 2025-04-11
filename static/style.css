@@ -1,0 +1,89 @@
+body {
+    background-color:white;
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .container {
+    width: 400px;
+    background-color: #3f3d3d;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #ccc;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #eee;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #333;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    color: #eee;
+  }
+  
+  th {
+    background-color: #444;
+  }
+  
+  .back-button {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+    
